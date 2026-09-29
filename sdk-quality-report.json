@@ -1,0 +1,286 @@
+{
+  "language": "go",
+  "operations": 25,
+  "operationCount": 25,
+  "operationIdentities": [
+    {
+      "publicOperationId": "appInformation",
+      "wireOperationId": "AppInformation",
+      "method": "get",
+      "path": "/api/v1/info",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "attachmentParams",
+      "wireOperationId": "AttachmentParams",
+      "method": "get",
+      "path": "/api/v1/message/{ID}/part/{PartID}",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "deleteMessagesParams",
+      "wireOperationId": "DeleteMessagesParams",
+      "method": "delete",
+      "path": "/api/v1/messages",
+      "mode": "normal",
+      "requestMediaType": "application/json"
+    },
+    {
+      "publicOperationId": "deleteSearchParams",
+      "wireOperationId": "DeleteSearchParams",
+      "method": "delete",
+      "path": "/api/v1/search",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "deleteTagParams",
+      "wireOperationId": "DeleteTagParams",
+      "method": "delete",
+      "path": "/api/v1/tags/{Tag}",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "downloadRawParams",
+      "wireOperationId": "DownloadRawParams",
+      "method": "get",
+      "path": "/api/v1/message/{ID}/raw",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "getAllTags",
+      "wireOperationId": "GetAllTags",
+      "method": "get",
+      "path": "/api/v1/tags",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "getChaos",
+      "wireOperationId": "getChaos",
+      "method": "get",
+      "path": "/api/v1/chaos",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "getHeadersParams",
+      "wireOperationId": "GetHeadersParams",
+      "method": "get",
+      "path": "/api/v1/message/{ID}/headers",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "getMessageHTMLParams",
+      "wireOperationId": "GetMessageHTMLParams",
+      "method": "get",
+      "path": "/view/{ID}.html",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "getMessageParams",
+      "wireOperationId": "GetMessageParams",
+      "method": "get",
+      "path": "/api/v1/message/{ID}",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "getMessagesParams",
+      "wireOperationId": "GetMessagesParams",
+      "method": "get",
+      "path": "/api/v1/messages",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "getMessageTextParams",
+      "wireOperationId": "GetMessageTextParams",
+      "method": "get",
+      "path": "/view/{ID}.txt",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "hTMLCheckParams",
+      "wireOperationId": "HTMLCheckParams",
+      "method": "get",
+      "path": "/api/v1/message/{ID}/html-check",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "linkCheckParams",
+      "wireOperationId": "LinkCheckParams",
+      "method": "get",
+      "path": "/api/v1/message/{ID}/link-check",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "releaseMessageParams",
+      "wireOperationId": "ReleaseMessageParams",
+      "method": "post",
+      "path": "/api/v1/message/{ID}/release",
+      "mode": "normal",
+      "requestMediaType": "application/json"
+    },
+    {
+      "publicOperationId": "renameTagParams",
+      "wireOperationId": "RenameTagParams",
+      "method": "put",
+      "path": "/api/v1/tags/{Tag}",
+      "mode": "normal",
+      "requestMediaType": "application/json"
+    },
+    {
+      "publicOperationId": "searchParams",
+      "wireOperationId": "SearchParams",
+      "method": "get",
+      "path": "/api/v1/search",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "sendMessageParams",
+      "wireOperationId": "SendMessageParams",
+      "method": "post",
+      "path": "/api/v1/send",
+      "mode": "normal",
+      "requestMediaType": "application/json"
+    },
+    {
+      "publicOperationId": "setChaosParams",
+      "wireOperationId": "setChaosParams",
+      "method": "put",
+      "path": "/api/v1/chaos",
+      "mode": "normal",
+      "requestMediaType": "application/json"
+    },
+    {
+      "publicOperationId": "setReadStatusParams",
+      "wireOperationId": "SetReadStatusParams",
+      "method": "put",
+      "path": "/api/v1/messages",
+      "mode": "normal",
+      "requestMediaType": "application/json"
+    },
+    {
+      "publicOperationId": "setTagsParams",
+      "wireOperationId": "SetTagsParams",
+      "method": "put",
+      "path": "/api/v1/tags",
+      "mode": "normal",
+      "requestMediaType": "application/json"
+    },
+    {
+      "publicOperationId": "spamAssassinCheckParams",
+      "wireOperationId": "SpamAssassinCheckParams",
+      "method": "get",
+      "path": "/api/v1/message/{ID}/sa-check",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "thumbnailParams",
+      "wireOperationId": "ThumbnailParams",
+      "method": "get",
+      "path": "/api/v1/message/{ID}/part/{PartID}/thumb",
+      "mode": "normal",
+      "requestMediaType": null
+    },
+    {
+      "publicOperationId": "webUIConfigurationResponse",
+      "wireOperationId": "WebUIConfigurationResponse",
+      "method": "get",
+      "path": "/api/v1/webui",
+      "mode": "normal",
+      "requestMediaType": null
+    }
+  ],
+  "models": 19,
+  "modelCount": 19,
+  "sourceFiles": 20,
+  "testFiles": 4,
+  "sourceLines": 3814,
+  "averageSourceFileLines": 190.7,
+  "largestSourceFileLines": 722,
+  "largestNonExemptSourceFileLines": 722,
+  "sourceFileLineLimit": 1000,
+  "oversizedSourceFileExceptions": [],
+  "artifactBytes": 467466,
+  "generatedUnitTests": 5,
+  "nativeExecutableTests": 5,
+  "sharedTestCaseDefinitions": 17,
+  "generatedTestCaseDefinitions": 17,
+  "renderedBehaviorCases": 17,
+  "behaviorKindsDeclared": [
+    "empty-response",
+    "error-response",
+    "json-request",
+    "json-response",
+    "path-serialization",
+    "query-serialization"
+  ],
+  "behaviorKindsExercised": [
+    "empty-response",
+    "error-response",
+    "json-request",
+    "json-response",
+    "path-serialization",
+    "query-serialization"
+  ],
+  "nativeBehaviorCoverageComplete": true,
+  "apiManifestPresent": true,
+  "apiManifestMatchesSchema": true,
+  "enumStrategy": "open",
+  "authoredContractTests": 0,
+  "authoredContractResponseModes": 0,
+  "synthesizedMockRoutes": 25,
+  "shadowedMockRoutes": 0,
+  "publicSymbols": 155,
+  "documentedPublicSymbols": 155,
+  "authoredDocumentedPublicSymbols": 153,
+  "synthesizedDocumentedPublicSymbols": 2,
+  "documentationCoverage": 1,
+  "authoredDocumentationCoverage": 0.9870967741935484,
+  "nativeTestCountPassed": null,
+  "contractResponseModesPassed": null,
+  "formattingPassed": "pending",
+  "lintingPassed": "pending",
+  "compilationPassed": "pending",
+  "nativeTestsPassed": "pending",
+  "contractTestsPassed": "pending",
+  "packagePassed": "pending",
+  "consumerInstallPassed": "pending",
+  "pythonLintFix": null,
+  "pythonLint": null,
+  "warnings": [],
+  "blockingFailures": [],
+  "registryPackageBytes": null,
+  "deliveryReady": false,
+  "gateStates": {
+    "formatting": "pending",
+    "linting": "pending",
+    "compilation": "pending",
+    "nativeTests": "pending",
+    "contractTests": "pending",
+    "package": "pending",
+    "consumerInstall": "pending"
+  },
+  "releaseScorecard": {
+    "status": "pending",
+    "score": null,
+    "outOf": 10,
+    "releaseReady": false,
+    "blockers": [
+      "verification has not run"
+    ]
+  }
+}

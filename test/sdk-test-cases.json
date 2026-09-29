@@ -1,0 +1,755 @@
+[
+  {
+    "id": "behavior-1",
+    "operationId": "getChaos",
+    "method": "GET",
+    "path": "/api/v1/chaos",
+    "signature": "{\"errors\":[\"empty\"],\"method\":\"GET\",\"nullable\":false,\"pagination\":null,\"parameters\":[],\"request\":[],\"response\":[\"empty\"],\"security\":[],\"streaming\":false}",
+    "kinds": [
+      "empty-response",
+      "error-response"
+    ],
+    "parameters": [],
+    "request": null,
+    "response": {
+      "mediaType": null,
+      "kind": "empty",
+      "value": null
+    },
+    "security": [],
+    "securitySchemes": [],
+    "pagination": null
+  },
+  {
+    "id": "behavior-2",
+    "operationId": "setChaosParams",
+    "method": "PUT",
+    "path": "/api/v1/chaos",
+    "signature": "{\"errors\":[\"empty\"],\"method\":\"PUT\",\"nullable\":false,\"pagination\":null,\"parameters\":[],\"request\":[\"json\"],\"response\":[\"empty\"],\"security\":[],\"streaming\":false}",
+    "kinds": [
+      "empty-response",
+      "error-response",
+      "json-request"
+    ],
+    "parameters": [],
+    "request": {
+      "mediaType": "application/json",
+      "kind": "json",
+      "value": {
+        "Authentication": {
+          "ErrorCode": 451,
+          "Probability": 5
+        },
+        "Recipient": {
+          "ErrorCode": 451,
+          "Probability": 5
+        },
+        "Sender": {
+          "ErrorCode": 451,
+          "Probability": 5
+        }
+      }
+    },
+    "response": {
+      "mediaType": null,
+      "kind": "empty",
+      "value": null
+    },
+    "security": [],
+    "securitySchemes": [],
+    "pagination": null
+  },
+  {
+    "id": "behavior-3",
+    "operationId": "GetMessageParams",
+    "method": "GET",
+    "path": "/api/v1/message/{ID}",
+    "signature": "{\"errors\":[\"empty\",\"empty\"],\"method\":\"GET\",\"nullable\":false,\"pagination\":null,\"parameters\":[{\"array\":false,\"explode\":false,\"location\":\"path\",\"required\":true,\"style\":\"simple\"}],\"request\":[],\"response\":[\"json\"],\"security\":[],\"streaming\":false}",
+    "kinds": [
+      "error-response",
+      "json-response",
+      "path-serialization"
+    ],
+    "parameters": [
+      {
+        "name": "ID",
+        "location": "path",
+        "required": true,
+        "style": "simple",
+        "explode": false,
+        "value": "id-1"
+      }
+    ],
+    "request": null,
+    "response": {
+      "mediaType": "application/json",
+      "kind": "json",
+      "value": {
+        "Attachments": [
+          {
+            "Checksums": {
+              "MD5": "MD5",
+              "SHA1": "SHA1",
+              "SHA256": "SHA256"
+            },
+            "ContentID": "Content-1",
+            "ContentType": "ContentType",
+            "FileName": "Example Name",
+            "PartID": "Part-1",
+            "Size": 1
+          }
+        ],
+        "Bcc": [
+          {
+            "Address": "Address",
+            "Name": "Example Name"
+          }
+        ],
+        "Cc": [
+          {
+            "Address": "Address",
+            "Name": "Example Name"
+          }
+        ],
+        "Date": "2024-01-01T00:00:00Z",
+        "From": {
+          "Address": "Address",
+          "Name": "Example Name"
+        },
+        "HTML": "HTML",
+        "ID": "id-1",
+        "Inline": [
+          {
+            "Checksums": {
+              "MD5": "MD5",
+              "SHA1": "SHA1",
+              "SHA256": "SHA256"
+            },
+            "ContentID": "Content-1",
+            "ContentType": "ContentType",
+            "FileName": "Example Name",
+            "PartID": "Part-1",
+            "Size": 1
+          }
+        ],
+        "ListUnsubscribe": {
+          "Errors": "Errors",
+          "Header": "Header",
+          "HeaderPost": "HeaderPost",
+          "Links": [
+            "https://example.com"
+          ]
+        },
+        "MessageID": "Message-1",
+        "ReplyTo": [
+          {
+            "Address": "Address",
+            "Name": "Example Name"
+          }
+        ],
+        "ReturnPath": "ReturnPath",
+        "Size": 1,
+        "Subject": "Subject",
+        "Tags": [
+          "Tags"
+        ],
+        "Text": "Text",
+        "To": [
+          {
+            "Address": "Address",
+            "Name": "Example Name"
+          }
+        ],
+        "Username": "Example Name"
+      }
+    },
+    "security": [],
+    "securitySchemes": [],
+    "pagination": null
+  },
+  {
+    "id": "behavior-4",
+    "operationId": "GetHeadersParams",
+    "method": "GET",
+    "path": "/api/v1/message/{ID}/headers",
+    "signature": "{\"errors\":[\"empty\",\"empty\"],\"method\":\"GET\",\"nullable\":false,\"pagination\":null,\"parameters\":[{\"array\":false,\"explode\":false,\"location\":\"path\",\"required\":true,\"style\":\"simple\"}],\"request\":[],\"response\":[\"empty\"],\"security\":[],\"streaming\":false}",
+    "kinds": [
+      "empty-response",
+      "error-response",
+      "path-serialization"
+    ],
+    "parameters": [
+      {
+        "name": "ID",
+        "location": "path",
+        "required": true,
+        "style": "simple",
+        "explode": false,
+        "value": "id-1"
+      }
+    ],
+    "request": null,
+    "response": {
+      "mediaType": null,
+      "kind": "empty",
+      "value": null
+    },
+    "security": [],
+    "securitySchemes": [],
+    "pagination": null
+  },
+  {
+    "id": "behavior-5",
+    "operationId": "LinkCheckParams",
+    "method": "GET",
+    "path": "/api/v1/message/{ID}/link-check",
+    "signature": "{\"errors\":[\"empty\",\"empty\"],\"method\":\"GET\",\"nullable\":false,\"pagination\":null,\"parameters\":[{\"array\":false,\"explode\":false,\"location\":\"path\",\"required\":true,\"style\":\"simple\"},{\"array\":false,\"explode\":true,\"location\":\"query\",\"required\":false,\"style\":\"form\"}],\"request\":[],\"response\":[\"json\"],\"security\":[],\"streaming\":false}",
+    "kinds": [
+      "error-response",
+      "json-response",
+      "path-serialization",
+      "query-serialization"
+    ],
+    "parameters": [
+      {
+        "name": "ID",
+        "location": "path",
+        "required": true,
+        "style": "simple",
+        "explode": false,
+        "value": "id-1"
+      },
+      {
+        "name": "follow",
+        "location": "query",
+        "required": false,
+        "style": "form",
+        "explode": true,
+        "value": "false"
+      }
+    ],
+    "request": null,
+    "response": {
+      "mediaType": "application/json",
+      "kind": "json",
+      "value": {
+        "Errors": 1,
+        "Links": [
+          {
+            "Status": "active",
+            "StatusCode": 200,
+            "URL": "https://example.com"
+          }
+        ]
+      }
+    },
+    "security": [],
+    "securitySchemes": [],
+    "pagination": null
+  },
+  {
+    "id": "behavior-6",
+    "operationId": "AttachmentParams",
+    "method": "GET",
+    "path": "/api/v1/message/{ID}/part/{PartID}",
+    "signature": "{\"errors\":[\"empty\",\"empty\"],\"method\":\"GET\",\"nullable\":false,\"pagination\":null,\"parameters\":[{\"array\":false,\"explode\":false,\"location\":\"path\",\"required\":true,\"style\":\"simple\"},{\"array\":false,\"explode\":false,\"location\":\"path\",\"required\":true,\"style\":\"simple\"}],\"request\":[],\"response\":[\"empty\"],\"security\":[],\"streaming\":false}",
+    "kinds": [
+      "empty-response",
+      "error-response",
+      "path-serialization"
+    ],
+    "parameters": [
+      {
+        "name": "ID",
+        "location": "path",
+        "required": true,
+        "style": "simple",
+        "explode": false,
+        "value": "id-1"
+      },
+      {
+        "name": "PartID",
+        "location": "path",
+        "required": true,
+        "style": "simple",
+        "explode": false,
+        "value": "Part-1"
+      }
+    ],
+    "request": null,
+    "response": {
+      "mediaType": null,
+      "kind": "empty",
+      "value": null
+    },
+    "security": [],
+    "securitySchemes": [],
+    "pagination": null
+  },
+  {
+    "id": "behavior-7",
+    "operationId": "ThumbnailParams",
+    "method": "GET",
+    "path": "/api/v1/message/{ID}/part/{PartID}/thumb",
+    "signature": "{\"errors\":[\"empty\"],\"method\":\"GET\",\"nullable\":false,\"pagination\":null,\"parameters\":[{\"array\":false,\"explode\":false,\"location\":\"path\",\"required\":true,\"style\":\"simple\"},{\"array\":false,\"explode\":false,\"location\":\"path\",\"required\":true,\"style\":\"simple\"}],\"request\":[],\"response\":[\"empty\"],\"security\":[],\"streaming\":false}",
+    "kinds": [
+      "empty-response",
+      "error-response",
+      "path-serialization"
+    ],
+    "parameters": [
+      {
+        "name": "ID",
+        "location": "path",
+        "required": true,
+        "style": "simple",
+        "explode": false,
+        "value": "id-1"
+      },
+      {
+        "name": "PartID",
+        "location": "path",
+        "required": true,
+        "style": "simple",
+        "explode": false,
+        "value": "Part-1"
+      }
+    ],
+    "request": null,
+    "response": {
+      "mediaType": null,
+      "kind": "empty",
+      "value": null
+    },
+    "security": [],
+    "securitySchemes": [],
+    "pagination": null
+  },
+  {
+    "id": "behavior-8",
+    "operationId": "ReleaseMessageParams",
+    "method": "POST",
+    "path": "/api/v1/message/{ID}/release",
+    "signature": "{\"errors\":[\"empty\",\"empty\"],\"method\":\"POST\",\"nullable\":false,\"pagination\":null,\"parameters\":[{\"array\":false,\"explode\":false,\"location\":\"path\",\"required\":true,\"style\":\"simple\"}],\"request\":[\"json\"],\"response\":[\"empty\"],\"security\":[],\"streaming\":false}",
+    "kinds": [
+      "empty-response",
+      "error-response",
+      "json-request",
+      "path-serialization"
+    ],
+    "parameters": [
+      {
+        "name": "ID",
+        "location": "path",
+        "required": true,
+        "style": "simple",
+        "explode": false,
+        "value": "id-1"
+      }
+    ],
+    "request": {
+      "mediaType": "application/json",
+      "kind": "json",
+      "value": {
+        "To": {
+          "0": "user1@example.com",
+          "1": "user2@example.com"
+        }
+      }
+    },
+    "response": {
+      "mediaType": null,
+      "kind": "empty",
+      "value": null
+    },
+    "security": [],
+    "securitySchemes": [],
+    "pagination": null
+  },
+  {
+    "id": "behavior-9",
+    "operationId": "GetMessagesParams",
+    "method": "GET",
+    "path": "/api/v1/messages",
+    "signature": "{\"errors\":[\"empty\"],\"method\":\"GET\",\"nullable\":false,\"pagination\":null,\"parameters\":[{\"array\":false,\"explode\":true,\"location\":\"query\",\"required\":false,\"style\":\"form\"},{\"array\":false,\"explode\":true,\"location\":\"query\",\"required\":false,\"style\":\"form\"}],\"request\":[],\"response\":[\"empty\"],\"security\":[],\"streaming\":false}",
+    "kinds": [
+      "empty-response",
+      "error-response",
+      "query-serialization"
+    ],
+    "parameters": [
+      {
+        "name": "start",
+        "location": "query",
+        "required": false,
+        "style": "form",
+        "explode": true,
+        "value": 0
+      },
+      {
+        "name": "limit",
+        "location": "query",
+        "required": false,
+        "style": "form",
+        "explode": true,
+        "value": 50
+      }
+    ],
+    "request": null,
+    "response": {
+      "mediaType": null,
+      "kind": "empty",
+      "value": null
+    },
+    "security": [],
+    "securitySchemes": [],
+    "pagination": null
+  },
+  {
+    "id": "behavior-10",
+    "operationId": "SetReadStatusParams",
+    "method": "PUT",
+    "path": "/api/v1/messages",
+    "signature": "{\"errors\":[\"empty\"],\"method\":\"PUT\",\"nullable\":false,\"pagination\":null,\"parameters\":[{\"array\":false,\"explode\":true,\"location\":\"query\",\"required\":false,\"style\":\"form\"}],\"request\":[\"json\"],\"response\":[\"empty\"],\"security\":[],\"streaming\":false}",
+    "kinds": [
+      "empty-response",
+      "error-response",
+      "json-request",
+      "query-serialization"
+    ],
+    "parameters": [
+      {
+        "name": "tz",
+        "location": "query",
+        "required": false,
+        "style": "form",
+        "explode": true,
+        "value": "tz"
+      }
+    ],
+    "request": {
+      "mediaType": "application/json",
+      "kind": "json",
+      "value": {
+        "IDs": {
+          "0": "4oRBnPtCXgAqZniRhzLNmS",
+          "1": "hXayS6wnCgNnt6aFTvmOF6"
+        },
+        "Read": true,
+        "Search": "tag:backups"
+      }
+    },
+    "response": {
+      "mediaType": null,
+      "kind": "empty",
+      "value": null
+    },
+    "security": [],
+    "securitySchemes": [],
+    "pagination": null
+  },
+  {
+    "id": "behavior-11",
+    "operationId": "DeleteMessagesParams",
+    "method": "DELETE",
+    "path": "/api/v1/messages",
+    "signature": "{\"errors\":[\"empty\"],\"method\":\"DELETE\",\"nullable\":false,\"pagination\":null,\"parameters\":[],\"request\":[\"json\"],\"response\":[\"empty\"],\"security\":[],\"streaming\":false}",
+    "kinds": [
+      "empty-response",
+      "error-response",
+      "json-request"
+    ],
+    "parameters": [],
+    "request": {
+      "mediaType": "application/json",
+      "kind": "json",
+      "value": {
+        "IDs": {
+          "0": "4oRBnPtCXgAqZniRhzLNmS",
+          "1": "hXayS6wnCgNnt6aFTvmOF6"
+        }
+      }
+    },
+    "response": {
+      "mediaType": null,
+      "kind": "empty",
+      "value": null
+    },
+    "security": [],
+    "securitySchemes": [],
+    "pagination": null
+  },
+  {
+    "id": "behavior-12",
+    "operationId": "SearchParams",
+    "method": "GET",
+    "path": "/api/v1/search",
+    "signature": "{\"errors\":[\"empty\"],\"method\":\"GET\",\"nullable\":false,\"pagination\":null,\"parameters\":[{\"array\":false,\"explode\":true,\"location\":\"query\",\"required\":true,\"style\":\"form\"},{\"array\":false,\"explode\":true,\"location\":\"query\",\"required\":false,\"style\":\"form\"},{\"array\":false,\"explode\":true,\"location\":\"query\",\"required\":false,\"style\":\"form\"},{\"array\":false,\"explode\":true,\"location\":\"query\",\"required\":false,\"style\":\"form\"}],\"request\":[],\"response\":[\"empty\"],\"security\":[],\"streaming\":false}",
+    "kinds": [
+      "empty-response",
+      "error-response",
+      "query-serialization"
+    ],
+    "parameters": [
+      {
+        "name": "query",
+        "location": "query",
+        "required": true,
+        "style": "form",
+        "explode": true,
+        "value": "query"
+      },
+      {
+        "name": "start",
+        "location": "query",
+        "required": false,
+        "style": "form",
+        "explode": true,
+        "value": "0"
+      },
+      {
+        "name": "limit",
+        "location": "query",
+        "required": false,
+        "style": "form",
+        "explode": true,
+        "value": "50"
+      },
+      {
+        "name": "tz",
+        "location": "query",
+        "required": false,
+        "style": "form",
+        "explode": true,
+        "value": "tz"
+      }
+    ],
+    "request": null,
+    "response": {
+      "mediaType": null,
+      "kind": "empty",
+      "value": null
+    },
+    "security": [],
+    "securitySchemes": [],
+    "pagination": null
+  },
+  {
+    "id": "behavior-13",
+    "operationId": "DeleteSearchParams",
+    "method": "DELETE",
+    "path": "/api/v1/search",
+    "signature": "{\"errors\":[\"empty\"],\"method\":\"DELETE\",\"nullable\":false,\"pagination\":null,\"parameters\":[{\"array\":false,\"explode\":true,\"location\":\"query\",\"required\":true,\"style\":\"form\"},{\"array\":false,\"explode\":true,\"location\":\"query\",\"required\":false,\"style\":\"form\"}],\"request\":[],\"response\":[\"empty\"],\"security\":[],\"streaming\":false}",
+    "kinds": [
+      "empty-response",
+      "error-response",
+      "query-serialization"
+    ],
+    "parameters": [
+      {
+        "name": "query",
+        "location": "query",
+        "required": true,
+        "style": "form",
+        "explode": true,
+        "value": "query"
+      },
+      {
+        "name": "tz",
+        "location": "query",
+        "required": false,
+        "style": "form",
+        "explode": true,
+        "value": "tz"
+      }
+    ],
+    "request": null,
+    "response": {
+      "mediaType": null,
+      "kind": "empty",
+      "value": null
+    },
+    "security": [],
+    "securitySchemes": [],
+    "pagination": null
+  },
+  {
+    "id": "behavior-14",
+    "operationId": "SendMessageParams",
+    "method": "POST",
+    "path": "/api/v1/send",
+    "signature": "{\"errors\":[\"empty\"],\"method\":\"POST\",\"nullable\":false,\"pagination\":null,\"parameters\":[],\"request\":[\"json\"],\"response\":[\"empty\"],\"security\":[],\"streaming\":false}",
+    "kinds": [
+      "empty-response",
+      "error-response",
+      "json-request"
+    ],
+    "parameters": [],
+    "request": {
+      "mediaType": "application/json",
+      "kind": "json",
+      "value": {
+        "Attachments": [
+          {
+            "Content": "iVBORw0KGgoAAAANSUhEUgAAAEEAAAA8CAMAAAAOlSdoAAAACXBIWXMAAAHrAAAB6wGM2bZBAAAAS1BMVEVHcEwRfnUkZ2gAt4UsSF8At4UtSV4At4YsSV4At4YsSV8At4YsSV4At4YsSV4sSV4At4YsSV4At4YtSV4At4YsSV4At4YtSV8At4YsUWYNAAAAGHRSTlMAAwoXGiktRE5dbnd7kpOlr7zJ0d3h8PD8PCSRAAACWUlEQVR42pXT4ZaqIBSG4W9rhqQYocG+/ys9Y0Z0Br+x3j8zaxUPewFh65K+7yrIMeIY4MT3wPfEJCidKXEMnLaVkxDiELiMz4WEOAZSFghxBIypCOlKiAMgXfIqTnBgSm8CIQ6BImxEUxEckClVQiHGj4Ba4AQHikAIClwTE9KtIghAhUJwoLkmLnCiAHJLRKgIMsEtVUKbBUIwoAg2C4QgQBE6l4VCnApBgSKYLLApCnCa0+96AEMW2BQcmC+Pr3nfp7o5Exy49gIADcIqUELGfeA+bp93LmAJp8QJoEcN3C7NY3sbVANixMyI0nku20/n5/ZRf3KI2k6JEDWQtxcbdGuAqu3TAXG+/799Oyyas1B1MnMiA+XyxHp9q0PUKGPiRAau1fZbLRZV09wZcT8/gHk8QQAxXn8VgaDqcUmU6O/r28nbVwXAqca2mRNtPAF5+zoP2MeN9Fy4NgC6RfcbgE7XITBRYTtOE3U3C2DVff7pk+PkUxgAbvtnPXJaD6DxulMLwOhPS/M3MQkgg1ZFrIXnmfaZoOfpKiFgzeZD/WuKqQEGrfJYkyWf6vlG3xUgTuscnkNkQsb599q124kdpMUjCa/XARHs1gZymVtGt3wLkiFv8rUgTxitYCex5EVGec0Y9VmoDTFBSQte2TfXGXlf7hbdaUM9Sk7fisEN9qfBBTK+FZcvM9fQSdkl2vj4W2oX/bRogO3XasiNH7R0eW7fgRM834ImTg+Lg6BEnx4vz81rhr+MYPBBQg1v8GndEOrthxaCTxNAOut8WKLGZQl+MPz88Q9tAO/hVuSeqQAAAABJRU5ErkJggg==",
+            "ContentID": "mailpit-logo",
+            "ContentType": "image/png",
+            "Filename": "mailpit.png"
+          }
+        ],
+        "Bcc": {
+          "0": "jack@example.com"
+        },
+        "Cc": [
+          {
+            "Email": "manager@example.com",
+            "Name": "Manager"
+          }
+        ],
+        "From": {
+          "Email": "john@example.com",
+          "Name": "John Doe"
+        },
+        "HTML": "<div style=\"text-align:center\"><p style=\"font-family: arial; font-size: 24px;\">Mailpit is <b>awesome</b>!</p><p><img src=\"cid:mailpit-logo\" /></p></div>",
+        "Headers": {
+          "X-IP": "1.2.3.4"
+        },
+        "ReplyTo": [
+          {
+            "Email": "secretary@example.com",
+            "Name": "Secretary"
+          }
+        ],
+        "Subject": "Mailpit message via the HTTP API",
+        "Tags": {
+          "0": "Tag 1",
+          "1": "Tag 2"
+        },
+        "Text": "Mailpit is awesome!",
+        "To": [
+          {
+            "Email": "jane@example.com",
+            "Name": "Jane Doe"
+          }
+        ]
+      }
+    },
+    "response": {
+      "mediaType": null,
+      "kind": "empty",
+      "value": null
+    },
+    "security": [],
+    "securitySchemes": [],
+    "pagination": null
+  },
+  {
+    "id": "behavior-15",
+    "operationId": "RenameTagParams",
+    "method": "PUT",
+    "path": "/api/v1/tags/{Tag}",
+    "signature": "{\"errors\":[\"empty\"],\"method\":\"PUT\",\"nullable\":false,\"pagination\":null,\"parameters\":[{\"array\":false,\"explode\":false,\"location\":\"path\",\"required\":true,\"style\":\"simple\"}],\"request\":[\"json\"],\"response\":[\"empty\"],\"security\":[],\"streaming\":false}",
+    "kinds": [
+      "empty-response",
+      "error-response",
+      "json-request",
+      "path-serialization"
+    ],
+    "parameters": [
+      {
+        "name": "Tag",
+        "location": "path",
+        "required": true,
+        "style": "simple",
+        "explode": false,
+        "value": "Tag"
+      }
+    ],
+    "request": {
+      "mediaType": "application/json",
+      "kind": "json",
+      "value": {
+        "Name": "New name"
+      }
+    },
+    "response": {
+      "mediaType": null,
+      "kind": "empty",
+      "value": null
+    },
+    "security": [],
+    "securitySchemes": [],
+    "pagination": null
+  },
+  {
+    "id": "behavior-16",
+    "operationId": "DeleteTagParams",
+    "method": "DELETE",
+    "path": "/api/v1/tags/{Tag}",
+    "signature": "{\"errors\":[\"empty\"],\"method\":\"DELETE\",\"nullable\":false,\"pagination\":null,\"parameters\":[{\"array\":false,\"explode\":false,\"location\":\"path\",\"required\":true,\"style\":\"simple\"}],\"request\":[],\"response\":[\"empty\"],\"security\":[],\"streaming\":false}",
+    "kinds": [
+      "empty-response",
+      "error-response",
+      "path-serialization"
+    ],
+    "parameters": [
+      {
+        "name": "Tag",
+        "location": "path",
+        "required": true,
+        "style": "simple",
+        "explode": false,
+        "value": "Tag"
+      }
+    ],
+    "request": null,
+    "response": {
+      "mediaType": null,
+      "kind": "empty",
+      "value": null
+    },
+    "security": [],
+    "securitySchemes": [],
+    "pagination": null
+  },
+  {
+    "id": "behavior-17",
+    "operationId": "GetMessageHTMLParams",
+    "method": "GET",
+    "path": "/view/{ID}.html",
+    "signature": "{\"errors\":[\"empty\",\"empty\"],\"method\":\"GET\",\"nullable\":false,\"pagination\":null,\"parameters\":[{\"array\":false,\"explode\":false,\"location\":\"path\",\"required\":true,\"style\":\"simple\"},{\"array\":false,\"explode\":true,\"location\":\"query\",\"required\":false,\"style\":\"form\"}],\"request\":[],\"response\":[\"empty\"],\"security\":[],\"streaming\":false}",
+    "kinds": [
+      "empty-response",
+      "error-response",
+      "path-serialization",
+      "query-serialization"
+    ],
+    "parameters": [
+      {
+        "name": "ID",
+        "location": "path",
+        "required": true,
+        "style": "simple",
+        "explode": false,
+        "value": "id-1"
+      },
+      {
+        "name": "embed",
+        "location": "query",
+        "required": false,
+        "style": "form",
+        "explode": true,
+        "value": "embed"
+      }
+    ],
+    "request": null,
+    "response": {
+      "mediaType": null,
+      "kind": "empty",
+      "value": null
+    },
+    "security": [],
+    "securitySchemes": [],
+    "pagination": null
+  }
+]

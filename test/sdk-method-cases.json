@@ -1,0 +1,759 @@
+{
+  "cases": [
+    {
+      "id": "AppInformation:AppInformation",
+      "operationId": "AppInformation",
+      "methodName": "AppInformation",
+      "namespace": [
+        "application"
+      ],
+      "mode": "normal",
+      "owner": null,
+      "arguments": {},
+      "argumentOrder": [],
+      "response": {
+        "kind": "empty",
+        "expected": null,
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "AttachmentParams:AttachmentParams",
+      "operationId": "AttachmentParams",
+      "methodName": "AttachmentParams",
+      "namespace": [
+        "message"
+      ],
+      "mode": "normal",
+      "owner": null,
+      "arguments": {
+        "ID": "id-1",
+        "PartID": "Part-1"
+      },
+      "argumentOrder": [
+        "ID",
+        "PartID"
+      ],
+      "response": {
+        "kind": "empty",
+        "expected": null,
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "DeleteMessagesParams:DeleteMessagesParams",
+      "operationId": "DeleteMessagesParams",
+      "methodName": "DeleteMessagesParams",
+      "namespace": [
+        "messages"
+      ],
+      "mode": "normal",
+      "owner": null,
+      "arguments": {
+        "IDs": [
+          "IDs"
+        ]
+      },
+      "argumentOrder": [
+        "IDs"
+      ],
+      "response": {
+        "kind": "empty",
+        "expected": null,
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "DeleteSearchParams:DeleteSearchParams",
+      "operationId": "DeleteSearchParams",
+      "methodName": "DeleteSearchParams",
+      "namespace": [
+        "messages"
+      ],
+      "mode": "normal",
+      "owner": null,
+      "arguments": {
+        "Query": "query",
+        "Tz": "tz"
+      },
+      "argumentOrder": [
+        "Query",
+        "Tz"
+      ],
+      "response": {
+        "kind": "empty",
+        "expected": null,
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "DeleteTagParams:DeleteTagParams",
+      "operationId": "DeleteTagParams",
+      "methodName": "DeleteTagParams",
+      "namespace": [
+        "tags"
+      ],
+      "mode": "normal",
+      "owner": null,
+      "arguments": {
+        "Tag": "Tag"
+      },
+      "argumentOrder": [
+        "Tag"
+      ],
+      "response": {
+        "kind": "empty",
+        "expected": null,
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "DownloadRawParams:DownloadRawParams",
+      "operationId": "DownloadRawParams",
+      "methodName": "DownloadRawParams",
+      "namespace": [
+        "message"
+      ],
+      "mode": "normal",
+      "owner": null,
+      "arguments": {
+        "ID": "id-1"
+      },
+      "argumentOrder": [
+        "ID"
+      ],
+      "response": {
+        "kind": "empty",
+        "expected": null,
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "GetAllTags:GetAllTags",
+      "operationId": "GetAllTags",
+      "methodName": "GetAllTags",
+      "namespace": [
+        "tags"
+      ],
+      "mode": "normal",
+      "owner": null,
+      "arguments": {},
+      "argumentOrder": [],
+      "response": {
+        "kind": "empty",
+        "expected": null,
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "getChaos:GetChaos",
+      "operationId": "getChaos",
+      "methodName": "GetChaos",
+      "namespace": [
+        "testing"
+      ],
+      "mode": "normal",
+      "owner": null,
+      "arguments": {},
+      "argumentOrder": [],
+      "response": {
+        "kind": "empty",
+        "expected": null,
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "GetHeadersParams:GetHeadersParams",
+      "operationId": "GetHeadersParams",
+      "methodName": "GetHeadersParams",
+      "namespace": [
+        "message"
+      ],
+      "mode": "normal",
+      "owner": null,
+      "arguments": {
+        "ID": "id-1"
+      },
+      "argumentOrder": [
+        "ID"
+      ],
+      "response": {
+        "kind": "empty",
+        "expected": null,
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "GetMessageHTMLParams:GetMessageHTMLParams",
+      "operationId": "GetMessageHTMLParams",
+      "methodName": "GetMessageHTMLParams",
+      "namespace": [
+        "testing"
+      ],
+      "mode": "normal",
+      "owner": null,
+      "arguments": {
+        "ID": "id-1",
+        "Embed": "embed"
+      },
+      "argumentOrder": [
+        "ID",
+        "Embed"
+      ],
+      "response": {
+        "kind": "empty",
+        "expected": null,
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "GetMessageParams:GetMessageParams",
+      "operationId": "GetMessageParams",
+      "methodName": "GetMessageParams",
+      "namespace": [
+        "message"
+      ],
+      "mode": "normal",
+      "owner": null,
+      "arguments": {
+        "ID": "id-1"
+      },
+      "argumentOrder": [
+        "ID"
+      ],
+      "response": {
+        "kind": "json",
+        "expected": {
+          "Attachments": [
+            {
+              "Checksums": {
+                "MD5": "MD5",
+                "SHA1": "SHA1",
+                "SHA256": "SHA256"
+              },
+              "ContentID": "Content-1",
+              "ContentType": "ContentType",
+              "FileName": "Example Name",
+              "PartID": "Part-1",
+              "Size": 1
+            }
+          ],
+          "Bcc": [
+            {
+              "Address": "Address",
+              "Name": "Example Name"
+            }
+          ],
+          "Cc": [
+            {
+              "Address": "Address",
+              "Name": "Example Name"
+            }
+          ],
+          "Date": "2024-01-01T00:00:00Z",
+          "From": {
+            "Address": "Address",
+            "Name": "Example Name"
+          },
+          "HTML": "HTML",
+          "ID": "id-1",
+          "Inline": [
+            {
+              "Checksums": {
+                "MD5": "MD5",
+                "SHA1": "SHA1",
+                "SHA256": "SHA256"
+              },
+              "ContentID": "Content-1",
+              "ContentType": "ContentType",
+              "FileName": "Example Name",
+              "PartID": "Part-1",
+              "Size": 1
+            }
+          ],
+          "ListUnsubscribe": {
+            "Errors": "Errors",
+            "Header": "Header",
+            "HeaderPost": "HeaderPost",
+            "Links": [
+              "https://example.com"
+            ]
+          },
+          "MessageID": "Message-1",
+          "ReplyTo": [
+            {
+              "Address": "Address",
+              "Name": "Example Name"
+            }
+          ],
+          "ReturnPath": "ReturnPath",
+          "Size": 1,
+          "Subject": "Subject",
+          "Tags": [
+            "Tags"
+          ],
+          "Text": "Text",
+          "To": [
+            {
+              "Address": "Address",
+              "Name": "Example Name"
+            }
+          ],
+          "Username": "Example Name"
+        },
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "GetMessagesParams:GetMessagesParams",
+      "operationId": "GetMessagesParams",
+      "methodName": "GetMessagesParams",
+      "namespace": [
+        "messages"
+      ],
+      "mode": "normal",
+      "owner": null,
+      "arguments": {
+        "Start": 0,
+        "Limit": 50
+      },
+      "argumentOrder": [
+        "Start",
+        "Limit"
+      ],
+      "response": {
+        "kind": "empty",
+        "expected": null,
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "GetMessageTextParams:GetMessageTextParams",
+      "operationId": "GetMessageTextParams",
+      "methodName": "GetMessageTextParams",
+      "namespace": [
+        "testing"
+      ],
+      "mode": "normal",
+      "owner": null,
+      "arguments": {
+        "ID": "id-1"
+      },
+      "argumentOrder": [
+        "ID"
+      ],
+      "response": {
+        "kind": "empty",
+        "expected": null,
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "HTMLCheckParams:HTMLCheckParams",
+      "operationId": "HTMLCheckParams",
+      "methodName": "HTMLCheckParams",
+      "namespace": [
+        "other"
+      ],
+      "mode": "normal",
+      "owner": null,
+      "arguments": {
+        "ID": "id-1"
+      },
+      "argumentOrder": [
+        "ID"
+      ],
+      "response": {
+        "kind": "json",
+        "expected": {
+          "Platforms": {
+            "key": [
+              "key"
+            ]
+          },
+          "Total": {
+            "Nodes": 1,
+            "Partial": 1,
+            "Supported": 1,
+            "Tests": 1,
+            "Unsupported": 1
+          },
+          "Warnings": [
+            {
+              "Category": "Category",
+              "Description": "example text",
+              "Keywords": "Keywords",
+              "NotesByNumber": {
+                "key": "key"
+              },
+              "Results": [
+                {
+                  "Family": "Family",
+                  "Name": "Example Name",
+                  "NoteNumber": "NoteNumber",
+                  "Platform": "Platform",
+                  "Support": "Support",
+                  "Version": "Version"
+                }
+              ],
+              "Score": {
+                "Found": 1,
+                "Partial": 1,
+                "Supported": 1,
+                "Unsupported": 1
+              },
+              "Slug": "Slug",
+              "Tags": [
+                "Tags"
+              ],
+              "Title": "Title",
+              "URL": "https://example.com"
+            }
+          ]
+        },
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "LinkCheckParams:LinkCheckParams",
+      "operationId": "LinkCheckParams",
+      "methodName": "LinkCheckParams",
+      "namespace": [
+        "other"
+      ],
+      "mode": "normal",
+      "owner": null,
+      "arguments": {
+        "ID": "id-1",
+        "Follow": "false"
+      },
+      "argumentOrder": [
+        "ID",
+        "Follow"
+      ],
+      "response": {
+        "kind": "json",
+        "expected": {
+          "Errors": 1,
+          "Links": [
+            {
+              "Status": "active",
+              "StatusCode": 200,
+              "URL": "https://example.com"
+            }
+          ]
+        },
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "ReleaseMessageParams:ReleaseMessageParams",
+      "operationId": "ReleaseMessageParams",
+      "methodName": "ReleaseMessageParams",
+      "namespace": [
+        "message"
+      ],
+      "mode": "normal",
+      "owner": null,
+      "arguments": {
+        "ID": "id-1",
+        "To": [
+          "To"
+        ]
+      },
+      "argumentOrder": [
+        "ID",
+        "To"
+      ],
+      "response": {
+        "kind": "empty",
+        "expected": null,
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "RenameTagParams:RenameTagParams",
+      "operationId": "RenameTagParams",
+      "methodName": "RenameTagParams",
+      "namespace": [
+        "tags"
+      ],
+      "mode": "normal",
+      "owner": null,
+      "arguments": {
+        "Tag": "Tag",
+        "Name": "New name"
+      },
+      "argumentOrder": [
+        "Tag",
+        "Name"
+      ],
+      "response": {
+        "kind": "empty",
+        "expected": null,
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "SearchParams:SearchParams",
+      "operationId": "SearchParams",
+      "methodName": "SearchParams",
+      "namespace": [
+        "messages"
+      ],
+      "mode": "normal",
+      "owner": null,
+      "arguments": {
+        "Query": "query",
+        "Start": "0",
+        "Limit": "50",
+        "Tz": "tz"
+      },
+      "argumentOrder": [
+        "Query",
+        "Start",
+        "Limit",
+        "Tz"
+      ],
+      "response": {
+        "kind": "empty",
+        "expected": null,
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "SendMessageParams:SendMessageParams",
+      "operationId": "SendMessageParams",
+      "methodName": "SendMessageParams",
+      "namespace": [
+        "message"
+      ],
+      "mode": "normal",
+      "owner": null,
+      "arguments": {
+        "From": {
+          "Email": "john@example.com",
+          "Name": "John Doe"
+        },
+        "Attachments": [
+          {
+            "Content": "iVBORw0KGgoAAAANSUhEUgAAAEEAAAA8CAMAAAAOlSdoAAAACXBIWXMAAAHrAAAB6wGM2bZBAAAAS1BMVEVHcEwRfnUkZ2gAt4UsSF8At4UtSV4At4YsSV4At4YsSV8At4YsSV4At4YsSV4sSV4At4YsSV4At4YtSV4At4YsSV4At4YtSV8At4YsUWYNAAAAGHRSTlMAAwoXGiktRE5dbnd7kpOlr7zJ0d3h8PD8PCSRAAACWUlEQVR42pXT4ZaqIBSG4W9rhqQYocG+/ys9Y0Z0Br+x3j8zaxUPewFh65K+7yrIMeIY4MT3wPfEJCidKXEMnLaVkxDiELiMz4WEOAZSFghxBIypCOlKiAMgXfIqTnBgSm8CIQ6BImxEUxEckClVQiHGj4Ba4AQHikAIClwTE9KtIghAhUJwoLkmLnCiAHJLRKgIMsEtVUKbBUIwoAg2C4QgQBE6l4VCnApBgSKYLLApCnCa0+96AEMW2BQcmC+Pr3nfp7o5Exy49gIADcIqUELGfeA+bp93LmAJp8QJoEcN3C7NY3sbVANixMyI0nku20/n5/ZRf3KI2k6JEDWQtxcbdGuAqu3TAXG+/799Oyyas1B1MnMiA+XyxHp9q0PUKGPiRAau1fZbLRZV09wZcT8/gHk8QQAxXn8VgaDqcUmU6O/r28nbVwXAqca2mRNtPAF5+zoP2MeN9Fy4NgC6RfcbgE7XITBRYTtOE3U3C2DVff7pk+PkUxgAbvtnPXJaD6DxulMLwOhPS/M3MQkgg1ZFrIXnmfaZoOfpKiFgzeZD/WuKqQEGrfJYkyWf6vlG3xUgTuscnkNkQsb599q124kdpMUjCa/XARHs1gZymVtGt3wLkiFv8rUgTxitYCex5EVGec0Y9VmoDTFBSQte2TfXGXlf7hbdaUM9Sk7fisEN9qfBBTK+FZcvM9fQSdkl2vj4W2oX/bRogO3XasiNH7R0eW7fgRM834ImTg+Lg6BEnx4vz81rhr+MYPBBQg1v8GndEOrthxaCTxNAOut8WKLGZQl+MPz88Q9tAO/hVuSeqQAAAABJRU5ErkJggg==",
+            "ContentID": "mailpit-logo",
+            "ContentType": "image/png",
+            "Filename": "mailpit.png"
+          }
+        ],
+        "Bcc": [
+          "Bcc"
+        ],
+        "Cc": [
+          {
+            "Email": "manager@example.com",
+            "Name": "Manager"
+          }
+        ],
+        "HTML": "<div style=\"text-align:center\"><p style=\"font-family: arial; font-size: 24px;\">Mailpit is <b>awesome</b>!</p><p><img src=\"cid:mailpit-logo\" /></p></div>",
+        "Headers": {
+          "X-IP": "1.2.3.4"
+        },
+        "ReplyTo": [
+          {
+            "Email": "secretary@example.com",
+            "Name": "Secretary"
+          }
+        ],
+        "Subject": "Mailpit message via the HTTP API",
+        "Tags": [
+          "Tags"
+        ],
+        "Text": "Mailpit is awesome!",
+        "To": [
+          {
+            "Email": "jane@example.com",
+            "Name": "Jane Doe"
+          }
+        ]
+      },
+      "argumentOrder": [
+        "From",
+        "Attachments",
+        "Bcc",
+        "Cc",
+        "HTML",
+        "Headers",
+        "ReplyTo",
+        "Subject",
+        "Tags",
+        "Text",
+        "To"
+      ],
+      "response": {
+        "kind": "empty",
+        "expected": null,
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "setChaosParams:SetChaosParams",
+      "operationId": "setChaosParams",
+      "methodName": "SetChaosParams",
+      "namespace": [
+        "testing"
+      ],
+      "mode": "normal",
+      "owner": null,
+      "arguments": {
+        "Authentication": {
+          "ErrorCode": 451,
+          "Probability": 5
+        },
+        "Recipient": {
+          "ErrorCode": 451,
+          "Probability": 5
+        },
+        "Sender": {
+          "ErrorCode": 451,
+          "Probability": 5
+        }
+      },
+      "argumentOrder": [
+        "Authentication",
+        "Recipient",
+        "Sender"
+      ],
+      "response": {
+        "kind": "empty",
+        "expected": null,
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "SetReadStatusParams:SetReadStatusParams",
+      "operationId": "SetReadStatusParams",
+      "methodName": "SetReadStatusParams",
+      "namespace": [
+        "messages"
+      ],
+      "mode": "normal",
+      "owner": null,
+      "arguments": {
+        "Tz": "tz",
+        "IDs": [
+          "IDs"
+        ],
+        "Read": true,
+        "Search": "tag:backups"
+      },
+      "argumentOrder": [
+        "Tz",
+        "IDs",
+        "Read",
+        "Search"
+      ],
+      "response": {
+        "kind": "empty",
+        "expected": null,
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "SetTagsParams:SetTagsParams",
+      "operationId": "SetTagsParams",
+      "methodName": "SetTagsParams",
+      "namespace": [
+        "tags"
+      ],
+      "mode": "normal",
+      "owner": null,
+      "arguments": {
+        "IDs": [
+          "IDs"
+        ],
+        "Tags": [
+          "Tags"
+        ]
+      },
+      "argumentOrder": [
+        "IDs",
+        "Tags"
+      ],
+      "response": {
+        "kind": "empty",
+        "expected": null,
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "SpamAssassinCheckParams:SpamAssassinCheckParams",
+      "operationId": "SpamAssassinCheckParams",
+      "methodName": "SpamAssassinCheckParams",
+      "namespace": [
+        "other"
+      ],
+      "mode": "normal",
+      "owner": null,
+      "arguments": {
+        "ID": "id-1"
+      },
+      "argumentOrder": [
+        "ID"
+      ],
+      "response": {
+        "kind": "json",
+        "expected": {
+          "Error": "Error",
+          "IsSpam": false,
+          "Rules": [
+            {
+              "Description": "example text",
+              "Name": "Example Name",
+              "Score": 1
+            }
+          ],
+          "Score": 1
+        },
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "ThumbnailParams:ThumbnailParams",
+      "operationId": "ThumbnailParams",
+      "methodName": "ThumbnailParams",
+      "namespace": [
+        "message"
+      ],
+      "mode": "normal",
+      "owner": null,
+      "arguments": {
+        "ID": "id-1",
+        "PartID": "Part-1"
+      },
+      "argumentOrder": [
+        "ID",
+        "PartID"
+      ],
+      "response": {
+        "kind": "empty",
+        "expected": null,
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "WebUIConfigurationResponse:WebUIConfigurationResponse",
+      "operationId": "WebUIConfigurationResponse",
+      "methodName": "WebUIConfigurationResponse",
+      "namespace": [
+        "application"
+      ],
+      "mode": "normal",
+      "owner": null,
+      "arguments": {},
+      "argumentOrder": [],
+      "response": {
+        "kind": "empty",
+        "expected": null,
+        "byteLength": 0
+      }
+    }
+  ]
+}
